@@ -85,12 +85,11 @@ aside#hp-title {
     text-align: center;
     /*text-shadow: 3px 1.5px rgba(115, 47, 59, 1);*/
 }
+
 #hp-main {
-    height: 75vmin;
     width: 100%;
     background-image: url(images/hp_stock1.jpg);
     background-repeat: no-repeat;
-    background-size: cover;
     background-position: center center;
     animation-name: hp_slide;
     /*animation animation-delay: 1s;*/
@@ -98,6 +97,7 @@ aside#hp-title {
     animation-timing-function: ease-in;
     animation-iteration-count: infinite;
 }
+
 
 @keyframes hp_slide {
     25% {
@@ -215,8 +215,8 @@ footer img {
     color: rgba(115, 47, 59, 1);
 }
 
-
 footer {
+    font-weight: 900;
     width: 100%;
     display: grid;
     grid-gap: 5px;
@@ -274,8 +274,8 @@ footer {
     }
     
     #hp-main {
-        width: 75vw;
-        height: 75vh;
+        width: 50vw;
+        height: 60vh;
         background-size: contain;
         margin: 0 auto;
     }
@@ -323,14 +323,13 @@ footer {
     }
     
     .social img {
-        margin: 5px 0;
-        width: 20px;
+        margin: 5px 10px;
+        width: 35px;
     }
     
     .social {
-        margin: 10px 0;
+        margin: 10px 20px;
         display: flex;
-        flex-direction: column;
         justify-content: center;
         align-items: center;
     }
@@ -344,6 +343,10 @@ footer {
         grid-template-areas: 
             "info-area hours-area social-area"
         
+    }
+
+    footer li {
+        font-size: 18px;
     }
 
     .gallery-footer {
