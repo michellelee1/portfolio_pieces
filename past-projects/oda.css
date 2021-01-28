@@ -1,0 +1,157 @@
+/*Mobile and Global*/
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url(images/one-piece-background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    background-attachment: fixed;
+}
+
+header h1, header h2 {
+    color: white;
+    text-align: center;
+    text-shadow: 2px 2px #808080;
+}
+
+body {
+    background: rgb(252,176,69);
+    background: linear-gradient(90deg, rgba(252,176,69,1) 0%, rgba(253,128,29,1) 30%, rgba(253,71,29,1) 100%);
+    font-family: 'Arimo',, sans-serif;
+}
+
+main {
+    color: #6b3616;
+    background-color: rgba(73, 146, 424, .8);
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Merriweather Sans', sans-serif;
+    color: #6b3616;
+    margin: 10px 0;
+}
+
+p {
+    margin: 10px 20px;
+    
+}
+
+aside {
+    border: 3px solid #a3601d;
+    border-radius: 10px;
+}
+
+li {
+    border: 3px solid #a3601d;
+    text-align: center;
+    text-decoration: none;
+    padding: 5px;
+    background-color: rgba(242, 180, 126, .7)
+}
+
+a {
+    height: 20px;
+    color: #D90D32;
+    display: block;
+    text-decoration: none;
+    transition: all 1s .25s ease;
+}
+
+a:hover {
+    height: 50px;
+    background-color: rgba(73, 146, 242, 1); 
+    text-decoration: underline;
+}
+
+h3 {
+    text-align: center;
+    padding: 20px;
+}
+
+img {
+    width: 100%;
+    padding: 10px;
+}
+
+table {
+    widows: 100%;
+    background-color: rgba(73, 146, 242, 1);
+}
+
+th {
+    text-align: left;
+    text-decoration: underline;
+    font-weight: 900;
+    background-color: rgba(242, 180, 126, .7);
+    color: #D90D32;
+    padding: 5px;
+}
+
+td {
+    padding: 5px;
+    font-size: 12px;
+    background-color: rgba(242, 180, 126, .5);
+    color: #D90D32;
+}
+
+label {
+    display: block;
+    padding: 10px;
+}
+
+#submit {
+    display: block;
+}
+
+form {
+    margin: 0px 20px;
+}
+
+footer {
+    color: gray;
+}
+
+/*wider than mobile*/
+
+@media only screen and (min-width: 481px) {
+    
+    aside {
+        width: 30%;
+        float: left;
+        padding: 10px;
+        border: none;
+        
+    }
+    
+    main {
+        width: 70%;
+        float: right
+    }
+    
+    h3 {
+        text-align: left;
+        
+    }
+    
+    img {
+        width: 40%;
+        margin: 0 20%
+        
+    }
+
+
+}
+
+

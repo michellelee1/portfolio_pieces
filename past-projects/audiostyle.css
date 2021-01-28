@@ -1,0 +1,58 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    background-color: black;
+    background-image: url(images/queen-bohemian-rhapsody.jpg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    width: 100vw;
+    height: 100vh;
+    margin: 0 auto;
+    animation: change 50s ease-in-out infinite;
+}
+
+@keyframes change {
+    45% {
+        background-image: url(images/queen-live.jpg); background-color: black; color: white;
+    }
+    
+    70% {
+        background-image: url(images/bohemian-rhapsody-poster.jpg); background-color: #9F2CBF; color: #F27830;
+    }
+    
+    100% {
+        background-image: url(images/queen-bohemian-rhapsody.jpg); background-color: black; color: white;
+    }
+}
+
+h1 {
+    font-family: 'Calistoga', cursive;
+    position: absolute;
+    top: 5%;
+    text-align: center;
+    font-size: 2em;
+}
+
+.music {
+    position: absolute;
+    bottom: 5%;
+    left: 15%;
+}
+
+@media only screen and (min-width: 481px) {
+    
+    h1 {
+        right: 3%; 
+        font-size: 3.5em; 
+    }
+    
+    .music {
+        left: 3%;
+    }
+}

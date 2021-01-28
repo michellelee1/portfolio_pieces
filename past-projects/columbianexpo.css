@@ -1,0 +1,160 @@
+/*mobile and global*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;        
+}
+
+ul {
+    list-style: none;
+}
+
+body {
+    background-color: #733934;
+    font-family: 'Montserrat', sans-serif;
+    color: #6B3200;
+    font-weight: 300;
+}
+
+h1 {
+    font-family: 'Sansita Swashed', cursive;
+    font-weight: 800;
+    font-size: 2em;
+}
+
+h2 {
+    margin-bottom: 10px;
+}
+
+a {
+    color: #F2CBBD;
+    text-decoration: none;
+    display: block;
+}
+
+nav#ordering {
+    text-align: center;
+}
+
+nav#ordering a {
+    background-color: #6092A6;
+}
+
+nav#ordering a:hover {
+    background-color: #A67468;
+    color: #0D0D0D;
+}
+
+footer h1 {
+    text-align: center;
+    color: #6092A6;
+}
+
+nav#side-to-side a {
+    display: block;
+    text-align: center;
+    background-color: #6092A6;
+    color: #F2CBBD;
+}
+
+nav#side-to-side a:hover {
+    background-color: #A67468;
+    color: #0D0D0D;
+}
+
+aside {
+    background-color: #F2CBBD;
+    padding: 20px;
+}
+
+main {
+    background-color: #BF785E;
+    padding:20px
+}
+
+#facts li{
+    margin-left: 35px;
+    list-style: square;
+    font-size: .851em;
+}
+
+#thumbnails img {
+    width: 100%;
+}
+
+/*wider than mobile*/
+
+@media only screen and (min-width: 481px) {
+    
+    nav#ordering {
+    background-color: #6092A6;
+}
+    
+    nav#ordering ul {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    #logo {order: 2}
+    #home-link {order: 0}
+    #about-link {order: 1}
+    #clients-link {order: 3}
+    #contact-link {order: 4}
+    
+    .container {
+        display: flex; 
+        flex-direction: row;
+    }
+    
+    aside {
+        width: 30%;
+    }
+    
+    main {
+        width: 70%;
+    }
+    
+    #thumbnails {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    #thumbnails img {
+        align-content: center;
+        width: 30%;
+        margin: 10px;
+    }
+    
+    footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        margin: 10px;
+        background-color: #6092A6;
+    }
+    
+    footer h1 {
+        color: #733934;
+        margin-left: 10px;
+    }
+    
+    nav#side-to-side ul {
+        display: flex;
+    }
+    
+    nav#side-to-side li {
+        margin: 0 10px;
+    }
+}
+
+
+
+
+
+
+
+
+

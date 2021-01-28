@@ -1,0 +1,144 @@
+/*mobile and global first*/
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: rgb(242, 156, 5);
+    background: radial-gradient(circle, rgba(242, 156, 5, 1) 0%, rgba(13, 168, 217, 1) 100%);
+    font-family: 'Varela Round', sans-serif;
+}
+
+header {
+    background: rgba(184, 184, 184, .8);
+    width: 100%;
+    padding: 10px;
+    grid-area: header-area;
+}
+
+
+h1 {
+    color: white;
+    font-size: 2em;
+    text-align: center;
+}
+
+h2 {
+    margin: 10px 0;
+    font-size: 1em;
+}
+
+img {
+
+    max-width: 100%;
+    padding:10px;
+}
+
+
+aside {
+    font-size: .8em;
+    background-color: rgba(107, 107, 107, .8);
+    color: white;
+    height: 100%;
+    text-align: left;
+    padding: 15px 50px;
+    grid-area: sidebar-area;
+    display: grid;
+    grid-template-rows: .5fr 1fr;
+    grid-column-gap: 25px;
+    grid-row-gap: 25px;
+    grid-template-areas: 
+        "text-area1 social1"
+        "text-area2 social2"
+        "text-area3 social3"
+}
+
+a {
+    display: block;
+    width: 125px;
+    height: 50px;
+    text-align: center;
+    padding: 10px 0;
+    background: rgb(242, 156, 5);
+    background: radial-gradient(circle, rgba(242, 156, 5, 1) 0%, rgba(13, 168, 217, 1) 100%);
+    text-decoration: none;
+    color: white;
+    font-size: 2em;
+}
+
+aside#icona {
+    grid-area: social1;
+}
+aside#iconb {
+    grid-area: social2;
+}
+aside#iconc {
+    grid-area: social3;
+}
+
+aside#text-a {
+    grid-area: text-area1;
+}
+aside#text-b {
+    grid-area: text-area2;
+}
+aside#text-c {
+    grid-area: text-area3;
+}
+
+
+main {
+    background-color: rgba(74, 74, 74, .8);
+    color: white;
+    font-size: 1.2em;
+    padding: 10px;
+    grid-area: content-area;
+}
+
+main p {
+    font-size: .8em;
+}
+
+.grid {
+    width: 100%;
+    max-width: 1080px;
+    justify-items: center;
+    margin: 0 auto;
+    display: grid;
+    grid-gap: 5px;
+    grid-template-areas: 
+        "header-area"
+        "picture-area"
+        "content-area"
+        "sidebar-area"
+    
+}
+
+/*wider than mobile*/
+
+@media only screen and (min-width: 481px) {
+    
+    .grid {
+        grid-template-columns: 1fr 2fr;
+        grid-gap: 10px;
+        grid-template-areas: 
+            "header-area header-area"
+            "picture-area content-area"
+            "sidebar-area sidebar-area"
+    }
+    
+    main {
+        font-size: 1.5em;
+    }
+    
+    aside {
+        font-size: 1.2em;
+    }
+    
+    a {
+        font-size: 1em;
+    }
+}

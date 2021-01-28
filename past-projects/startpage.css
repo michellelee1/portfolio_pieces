@@ -1,0 +1,155 @@
+/*Clearing out browser default style, here the star means all tags, so we are getting rid of extra margin, padding, and weird box stuff for all tags*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Mobile and Global First*/
+
+body { /*keep colors and font same as fantomedesign's site*/
+    background-color: #F28177;
+    color: #260101;
+    font-family: 'Marko One', serif;
+    margin: 20px;
+    padding: 10px;
+}
+
+h1 {
+    font-size: 20px;
+    text-align: center;
+}
+
+h2 {
+    font-size:16px;
+    font-weight: 200;
+}
+
+h3 {
+    font-size: 14px;
+    font-weight: 200;
+    text-decoration: underline;
+}
+
+img {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    width: 20%;
+}
+
+ul {
+    font-size: 12px;
+    padding: 10px;
+    list-style: none;
+}
+
+a   {
+    font-size: 12px;
+    }
+
+a:link {
+    color:#330133;
+}
+
+a:visited {
+    color:#330133;
+}
+
+
+.header {
+    border: 1px solid #330133;
+    margin-bottom:5px;
+    padding: 15px;
+}
+
+.links {
+    width: 25%;
+    float: right;
+    padding: 15px;
+}
+
+.main {
+    width: 75%;
+    float: left;
+    padding: 15px;
+    text-align: center;
+}
+
+/*Devices wider than phones, 480px*/
+
+@media only screen and (min-width:481px) {
+    body {
+        background-color: #330133;
+        color: #F28177;
+    }
+    
+    h1 {
+        font-size: 44px;
+    }
+    
+    h2 {
+        font-size:28px;
+        font-weight: 400;
+    }
+    
+    h3 {
+    font-size: 20px;
+    font-weight: 500;
+    }
+    
+    a {
+        font-size: 16px;
+    }
+    
+    a:link {
+        color:#D9B1A3;
+    }
+
+    a:visited {
+        color:#D9B1A3;
+    }
+
+    
+    .header {
+        border: 2px solid #D9B1A3;
+    }
+
+}
+
+/*Devices wider than table, 760px*/
+
+@media only screen and (min-width: 761px) {
+    body {
+        background-color: #F28177;
+        color: #330133;
+    }
+    
+    h1 {
+        font-size: 60px;
+    }
+    
+    h2 {
+        font-size:36px;
+        font-weight: 600;
+    }
+    
+    h3 {
+        font-size: 28px;
+        font-weight: 700;
+    }
+    
+    a {
+        font-size: 20px;
+    }
+    
+    a:link {
+        color:#330133;
+    }
+
+    a:visited {
+        color:#330133;
+    }
+     .header {
+        border: 3px solid #330133;
+    }
+}

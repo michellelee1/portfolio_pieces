@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="javascriptbasic.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet"> 
+    
+	<title>JavaScript and jQuery</title>
+</head>
+<body>
+    <main>
+        <div class="title">
+            <h1>John Resig</h1>        
+            <img class="portrait" src="images/john_resig_400x400.jpg" alt="John Resig portrait">
+            <div id="shape-buttons">
+                <button type="button" class="changeCircle">Circle</button>
+                <button type="button" class="changeSquare">Square</button>
+            </div>
+        </div>
+        <div class="banner">
+            <p>John Resig is best known as an expert in the JavaScript programming language and the creator of the most popular JavaScript library in the world: jQuery. He’s created numerous JavaScript projects that continue to be integral parts of modern day web development. He’s also the author of the popular JavaScript books: Secrets of the JavaScript Ninja, Pro JavaScript Techniques, and The GraphQL Guide.</p>
+            <p>John is the Chief Software Architect at Khan Academy where he works to provide a free education to everyone, everywhere. He’s worked on many aspects of the product: math exercises, Computer Programming, mobile, accessibility, internationalization, build systems, and performance. He leads the Frontend Infrastructure team which supports web frontend and mobile development.</p>
+        </div>
+        <div>
+            <button type="button" class="makeBlue">Make it blue</button>
+            <button type="button" class="makeRed">Make it red</button>
+        </div>
+        <script>
+            var roundCircle = document.querySelector('.changeCircle')
+
+                roundCircle.addEventListener('click', function() {
+                var banner = document.querySelector('.portrait')
+                banner.classList.add('nay')
+                })
+
+            var roundSquare = document.querySelector('.changeSquare')
+
+                roundSquare.addEventListener('click', function() {
+                var banner = document.querySelector('.portrait')
+                banner.classList.remove('nay')
+                })
+
+            var blueButton = document.querySelector('.makeBlue')
+
+                blueButton.addEventListener('click', function() {
+                var banner = document.querySelector('.banner')
+                banner.classList.add('yay')
+                })
+
+            var redButton = document.querySelector('.makeRed')
+
+                redButton.addEventListener('click', function() {
+                var banner = document.querySelector('.banner')
+                banner.classList.remove('yay')
+                })
+        </script>
+	</main>
+</body>
+</html>
