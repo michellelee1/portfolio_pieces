@@ -93,7 +93,7 @@ aside#hp-title {
     background-position: center center;
     animation-name: hp_slide;
     /*animation animation-delay: 1s;*/
-    animation-duration: 60s;
+    animation-duration: 20s;
     animation-timing-function: ease-in;
     animation-iteration-count: infinite;
 }
