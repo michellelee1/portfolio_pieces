@@ -87,19 +87,16 @@ aside#hp-title {
 }
 
 #hp-main {
+    margin: 20px auto;
+
+}
+
+#hp-main img {
     width: 100%;
-    background-image: url(images/hp_stock1.jpg);
-    background-repeat: no-repeat;
-    background-position: center center;
-    animation-name: hp_slide;
-    /*animation animation-delay: 1s;*/
-    animation-duration: 20s;
-    animation-timing-function: ease-in;
-    animation-iteration-count: infinite;
 }
 
 
-@keyframes hp_slide {
+/*@keyframes hp_slide {
     25% {
         background-image: url(images/hp_stock2.jpg); 
     }
@@ -115,7 +112,7 @@ aside#hp-title {
     100% {
         background-image: url(images/hp_stock1.jpg); 
     }
-}
+}*/
 
 /*gallery*/
 #gallery-container {
@@ -272,13 +269,12 @@ footer {
         font-weight: 900;
         /*text-shadow: 1.5px 1.5px rgba(115, 47, 59, 1);*/ 
     }
-    
+
     #hp-main {
         width: 50vw;
-        height: 60vh;
-        background-size: contain;
-        margin: 0 auto;
     }
+    
+
 /*end of homepage css*/
 
 /*gallery css*/ 
