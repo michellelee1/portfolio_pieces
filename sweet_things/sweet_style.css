@@ -93,26 +93,9 @@ aside#hp-title {
 
 #hp-main img {
     width: 100%;
+    border-radius: 25px;
 }
 
-
-/*@keyframes hp_slide {
-    25% {
-        background-image: url(images/hp_stock2.jpg); 
-    }
-    
-    50% {
-        background-image: url(images/hp_stock3.jpg); 
-    }
-    
-    75% {
-        background-image: url(images/hp_stock4.jpg); 
-    }
-    
-    100% {
-        background-image: url(images/hp_stock1.jpg); 
-    }
-}*/
 
 /*gallery*/
 #gallery-container {
@@ -179,6 +162,23 @@ display: flex;
 
 
 /*footer css applies to all pages*/
+footer {
+    background-color: rgba(115, 47, 59, 1);
+    display: block;
+    color: rgba(163, 186, 191, 1);
+    font-weight: 900;
+    width: 100%;
+}
+
+#footer-block {
+    display: grid;
+    grid-gap: 5px;
+    grid-template-areas: 
+        "info-area"
+        "hours-area"
+        "social-area"
+}
+
 footer img {
     width: 10%;
     margin: 0 10px;
@@ -195,7 +195,6 @@ footer img {
     text-align: center;
     font-size: 1.05em;
     grid-area: info-area;
-    color: rgba(115, 47, 59, 1);
     font-family: quiche-sans, sans-serif;
 }
 
@@ -209,18 +208,7 @@ footer img {
 }
 
 .operations li {
-    color: rgba(115, 47, 59, 1);
-}
-
-footer {
-    font-weight: 900;
-    width: 100%;
-    display: grid;
-    grid-gap: 5px;
-    grid-template-areas: 
-        "info-area"
-        "hours-area"
-        "social-area"
+    color: rgba(73, 134, 140, 1);
 }
 
     .social {
@@ -228,20 +216,51 @@ footer {
         margin: 0 auto;
     }
 
-/*footer css applies on gallery page only*/
-.gallery-footer {
-    position: absolute;
-    top: 90vh;
+
+/*locatioon page*/
+
+#about-container {
+    display: grid;
+    grid-gap: 5px;
+    grid-template-areas: 
+        "mission-statement"
+        "map-location"
+}
+
+#about-us {
+    margin: 0px;
+    padding: 25px;
+    grid-area: mission-statement;
     
 }
-/*locatioon page*/
+
+#about-us h1 {
+    font-family: quiet-sans, sans-serif;
+    font-weight: 700;
+    font-size: 1.5em;
+    color: rgba(73, 134, 140, 1);
+    text-align: center;
+}
+
+#about-us p {
+    font-family: quiet-sans, sans-serif;
+    font-weight: 400;
+    font-size: 1em;
+    padding: 10px 50px;
+    color: rgba(115, 47, 59, 1);
+}
+
 #map {
-    background-image: url(images/sweet_things_map.png);
+    /*background-image: url(images/sweet_things_map.png);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
-    width: 100vw;
-    height: 75vw;
+    background-position: center;*/
+    grid-area: map-location;
+}
+
+#map img {
+    width: 100%;
+    border-radius: 25px;
 }
 
 
@@ -279,7 +298,7 @@ footer {
 
 /*gallery css*/ 
     .small {
-    width: 20%;  
+    width: 24%;  
     }
     
     .large {
@@ -305,6 +324,17 @@ footer {
 /*end of menu css*/    
     
     /*footer desktop css*/
+
+    #footer-block {
+        width: 50%;
+        margin: 0 auto;
+        grid-template-columns: 1fr 1fr .5fr;
+        align-items: flex-start;
+        grid-column-gap: 5px;
+        grid-template-areas: 
+            "info-area hours-area social-area" 
+    }
+
     .info {
         font-size: 1.25vw;
         margin-top: 15px;
@@ -320,7 +350,7 @@ footer {
     
     .social img {
         margin: 5px 10px;
-        width: 35px;
+        width: 50px;
     }
     
     .social {
@@ -330,32 +360,46 @@ footer {
         align-items: center;
     }
 
-    footer {
-        width: 50%;
-        margin: 0 auto;
-        grid-template-columns: 1fr 1fr .5fr;
-        align-items: flex-start;
-        grid-column-gap: 5px;
-        grid-template-areas: 
-            "info-area hours-area social-area"
-        
-    }
 
     footer li {
         font-size: 18px;
     }
-
-    .gallery-footer {
-        position: absolute;
-        top: 100vh;
-    
-    }/*end of desktop footer css*/
     
 /*desktop location css*/    
-    #map {
-        background-size: contain;
-        margin-top: 20px;
-        height: 35vw;
+
+    #about-container {
+        display: grid;
+        grid-template-columns: .75fr 1fr;
+        align-items: flex-start;
+        grid-gap: ;
+        grid-template-areas: 
+            "mission-statement map-location"
+    }
+
+    #about-us {
+        margin: 50px;
+        
+    }
+    
+    #about-us h1 {
+        font-family: quiet-sans, sans-serif;
+        font-weight: 900;
+        font-size: 3vw;
+        color: rgba(73, 134, 140, 1);
+        text-align: center;
+    }
+    
+    #about-us p {
+        font-family: quiet-sans, sans-serif;
+        font-weight: 600;
+        font-size: 1.7vw;
+        padding: 10px 25px;
+        color: rgba(115, 47, 59, 1);
+    }
+
+    #map img {
+        margin: 50px;
+        width: 75%;
     }/*end of desktop location css*/
     
     
