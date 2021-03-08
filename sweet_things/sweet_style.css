@@ -68,7 +68,8 @@ nav#ordering ul {
 nav#ordering a:hover {
     background-color: rgba(115, 47, 59, 1);
     color: rgba(242, 208, 196, 1);
-    padding: 10px;
+    padding: 5px 10px;
+    border-radius: 15px;
 }
 
 /*homepage css start*/
@@ -110,7 +111,8 @@ aside#hp-title {
 .small {
     width: 35%;
     position: relative;
-    margin: 3px;   
+    margin: 3px;
+    border-radius: 25px;   
     }
 
 .small:hover {
@@ -145,6 +147,7 @@ aside#hp-title {
 .large {
     width: 75vw;
     height: 100%;
+    border-radius: 25px;
 }
 /*end of gallery css*/
 
@@ -158,6 +161,7 @@ aside#hp-title {
 
 .menu img {
     width: 100%;
+    border-radius: 25px;
 }
 
 
