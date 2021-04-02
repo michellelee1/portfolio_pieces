@@ -44,14 +44,14 @@ nav img {
 }
 
 nav#ordering a {
-    font-size: 1.15em;
+    font-size: 1em;
+    font-weight: 700;
     text-decoration: none;
     display: block;
     margin: 0 10px;
     background-color: rgba(163, 186, 191, 1);
     text-align: center;
     color: rgba(115, 47, 59, 1);
-    font-weight: 500;
 }
 
 nav#ordering ul {
@@ -375,7 +375,7 @@ footer img {
         display: grid;
         grid-template-columns: .75fr 1fr;
         align-items: flex-start;
-        grid-gap: ;
+        grid-gap: 5px;
         grid-template-areas: 
             "mission-statement map-location"
     }
