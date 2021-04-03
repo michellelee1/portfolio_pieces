@@ -168,6 +168,8 @@ aside#hp-title {
 /*footer css applies to all pages*/
 footer {
     background-color: rgba(115, 47, 59, 1);
+    padding-top: 25px;
+    padding-bottom: 100px;
     display: block;
     color: rgba(163, 186, 191, 1);
     font-weight: 900;
@@ -329,6 +331,10 @@ footer img {
     
     /*footer desktop css*/
 
+    footer {
+        padding-bottom: 75px;
+    }
+
     #footer-block {
         width: 50%;
         margin: 0 auto;
@@ -403,7 +409,7 @@ footer img {
 
     #map img {
         margin: 50px;
-        width: 75%;
+        width: 80%;
     }/*end of desktop location css*/
     
     
