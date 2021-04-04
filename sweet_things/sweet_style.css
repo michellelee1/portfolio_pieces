@@ -161,7 +161,6 @@ aside#hp-title {
 
 .menu img {
     width: 100%;
-    border-radius: 25px;
 }
 
 
@@ -326,6 +325,7 @@ footer img {
     .menu img {
         width: 30%;
         margin: 25px;
+        border-radius: 25px;
     }
 /*end of menu css*/    
     
